@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="app-wrap">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Search for a city..."
+        />
+      </header>
+      <main>
+        <section class="location">
+          <div class="city">Please allow getting location or type city</div>
+          <div class="date"></div>
+        </section>
+        <div class="data">
+          <div class="current">
+            <div class="temp"></div>
+            <div class="weather">
+              <span class="weatherData"></span>
+              <span class="icon"></span>
+            </div>
+            <div class="hi-low"></div>
+          </div>
+          <div class="weatherChart">
+            <canvas id="weatherChart"></canvas>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
